@@ -11,8 +11,9 @@ from sqlalchemy import text
 import analytics
 import anomaly
 from agent import run_energy_agent
+from maintenance_api import router as maintenance_router
 
-app = FastAPI(title="FacilityOps AI - Energy API", version="1.0")
+app = FastAPI(title="FacilityOps AI API", version="2.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -20,7 +21,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+app.include_router(maintenance_router)
 
 def clean(obj):
     """Convert numpy, pandas and Decimal values into plain JSON types."""

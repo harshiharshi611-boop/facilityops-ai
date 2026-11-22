@@ -56,3 +56,39 @@ th { color: var(--muted); font-weight: 500; }
 .tabs a { padding: 10px 16px; text-decoration: none; color: var(--muted);
   border-bottom: 2px solid transparent; font-weight: 500; }
 .tabs a.active { color: #2563eb; border-bottom-color: #2563eb; }
+
+/* ---------- Milestone 2: maintenance ---------- */
+.module { display: flex; gap: 8px; margin-bottom: 14px; }
+.pill { padding: 8px 18px; border-radius: 999px; border: 1px solid var(--line);
+  background: #fff; color: var(--muted); text-decoration: none; font-weight: 600; }
+.pill.active { background: #2563eb; border-color: #2563eb; color: #fff; }
+
+.excellent { background: #dcfce7; color: #166534; }
+.good { background: #dbeafe; color: #1e40af; }
+.warning { background: #fef3c7; color: #92400e; }
+.critical { background: #fee2e2; color: #991b1b; }
+
+.barrow { display: grid; grid-template-columns: 90px 1fr 90px; gap: 10px;
+  align-items: center; margin: 12px 0; font-size: 14px; }
+.bartrack { background: #e2e8f0; border-radius: 999px; height: 10px; overflow: hidden; }
+.barfill { height: 100%; border-radius: 999px; }
+.riskbar { background: #e2e8f0; border-radius: 999px; height: 6px; margin-top: 4px; overflow: hidden; }
+.riskbar div { height: 100%; border-radius: 999px; }
+
+.cell-sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.scroll { max-height: 420px; overflow: auto; }
+.list-row { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0;
+  border-bottom: 1px solid var(--line); font-size: 14px; }
+.list-row:last-of-type { border-bottom: none; }
+
+.filters { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+.chip { padding: 5px 12px; border-radius: 999px; font-size: 13px; cursor: pointer;
+  text-transform: capitalize; color: var(--muted); }
+.chip.on { background: #2563eb; border-color: #2563eb; color: #fff; }
+
+.cal { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.day { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.day.hot { border-color: #fca5a5; background: #fff7f7; }
+.day h4 { margin: 0 0 8px; font-size: 13px; color: var(--muted); }
+.job { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; margin: 6px 0; }
+.job .cell-sub { display: block; }
