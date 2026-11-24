@@ -1,0 +1,75 @@
+scenario_id,facility_id,scenario_type,badge_id,zone,start_time,details
+1,1,repeated_denied,F1-E009,Server Room,2026-08-05 13:17:37.267299807,5 denied attempts at Server Room
+2,1,repeated_denied,F1-E065,Server Room,2026-08-07 08:55:26.099992033,8 denied attempts at Server Room
+3,1,impossible_travel,F1-E087,Main Lobby,2026-08-07 13:33:19.249279932,same badge at both facilities within 3 minutes
+4,1,door_forced,,Meeting Rooms,2026-08-10 00:13:31.794147103,"door forced open, no badge swipe"
+5,1,visitor_no_checkout,,Main Lobby,2026-08-11 11:07:54.842648818,visitor V00799 never checked out
+6,1,tailgating,F1-E060,Main Lobby,2026-08-11 18:00:00.000000000,2 people entered on 1 swipe
+7,1,tailgating,F1-E021,Main Lobby,2026-08-14 09:00:00.000000000,2 people entered on 1 swipe
+8,1,visitor_overstay,,Main Lobby,2026-08-14 12:58:23.664079567,visitor V00795 stayed over 10 hours
+9,1,repeated_denied,F1-E105,Server Room,2026-08-18 11:22:11.941887259,7 denied attempts at Server Room
+10,1,off_hours_restricted,F1-E007,Server Room,2026-08-19 03:54:25.388120418,Server Room opened between 00:00 and 04:00
+11,1,door_forced,,Main Lobby,2026-08-20 02:18:08.554563680,"door forced open, no badge swipe"
+12,1,off_hours_restricted,F1-E007,Server Room,2026-08-21 02:29:07.899666187,Server Room opened between 00:00 and 04:00
+13,1,visitor_overstay,,Main Lobby,2026-08-21 12:05:39.377111350,visitor V00793 stayed over 10 hours
+14,1,visitor_restricted_zone,,Server Room,2026-08-25 12:01:31.099778333,visitor V00800 entered Server Room
+15,1,loitering,,Main Lobby,2026-08-28 03:13:10.870459660,person stayed 59 min at night
+16,1,off_hours_restricted,F1-E002,Server Room,2026-08-31 02:36:51.379937951,Server Room opened between 00:00 and 04:00
+17,1,visitor_no_checkout,,Main Lobby,2026-09-01 11:03:19.900572595,visitor V00797 never checked out
+18,1,door_forced,,Meeting Rooms,2026-09-03 04:28:04.623076041,"door forced open, no badge swipe"
+19,1,tailgating,F1-E040,Main Lobby,2026-09-04 09:00:00.000000000,2 people entered on 1 swipe
+20,1,visitor_no_checkout,,Main Lobby,2026-09-07 13:25:53.111523420,visitor V00798 never checked out
+21,1,impossible_travel,F1-E050,Main Lobby,2026-09-08 13:32:19.706963138,same badge at both facilities within 3 minutes
+22,1,repeated_denied,F1-E056,Server Room,2026-09-11 12:41:41.530958460,8 denied attempts at Server Room
+23,1,off_hours_restricted,F1-E002,Server Room,2026-09-14 03:47:47.067606430,Server Room opened between 00:00 and 04:00
+24,1,loitering,,Main Lobby,2026-09-21 00:57:42.527415965,person stayed 38 min at night
+25,1,visitor_restricted_zone,,Server Room,2026-09-22 14:52:12.509298452,visitor V00803 entered Server Room
+26,1,tailgating,F1-E106,Main Lobby,2026-09-24 18:00:00.000000000,2 people entered on 1 swipe
+27,1,loitering,,Main Lobby,2026-09-30 03:25:22.110136241,person stayed 58 min at night
+28,1,tailgating,F1-E032,Main Lobby,2026-10-01 17:30:00.000000000,2 people entered on 1 swipe
+29,1,tailgating,F1-E120,Main Lobby,2026-10-02 17:30:00.000000000,2 people entered on 1 swipe
+30,1,visitor_overstay,,Main Lobby,2026-10-06 12:20:48.716924580,visitor V00794 stayed over 10 hours
+31,1,loitering,,Main Lobby,2026-10-07 03:25:54.389132782,person stayed 45 min at night
+32,1,impossible_travel,F1-E049,Main Lobby,2026-10-09 14:35:29.156923413,same badge at both facilities within 3 minutes
+33,1,repeated_denied,F1-E091,Server Room,2026-10-12 08:40:52.727704819,6 denied attempts at Server Room
+34,1,impossible_travel,F1-E089,Main Lobby,2026-10-12 11:46:47.298722818,same badge at both facilities within 3 minutes
+35,1,loitering,,Main Lobby,2026-10-15 02:32:52.242044098,person stayed 43 min at night
+36,1,visitor_overstay,,Main Lobby,2026-10-16 12:32:16.730689197,visitor V00796 stayed over 10 hours
+37,1,visitor_restricted_zone,,Server Room,2026-10-16 14:43:18.801266816,visitor V00801 entered Server Room
+38,1,visitor_restricted_zone,,Server Room,2026-10-22 14:24:25.863635279,visitor V00802 entered Server Room
+39,1,door_forced,,Open Office Floor 1,2026-10-23 03:03:26.398180611,"door forced open, no badge swipe"
+40,2,tailgating,F2-E034,Main Lobby,2026-08-10 17:30:00.000000000,2 people entered on 1 swipe
+41,2,off_hours_restricted,F2-E007,ICU,2026-08-17 02:12:36.539239292,ICU opened between 00:00 and 04:00
+42,2,repeated_denied,F2-E058,ICU,2026-08-17 18:16:11.871070848,7 denied attempts at ICU
+43,2,visitor_restricted_zone,,ICU,2026-08-18 14:31:41.652398209,visitor V01582 entered ICU
+44,2,repeated_denied,F2-E053,ICU,2026-08-24 16:58:45.097146819,8 denied attempts at ICU
+45,2,visitor_restricted_zone,,ICU,2026-08-27 12:04:55.238263291,visitor V01581 entered ICU
+46,2,visitor_overstay,,Main Lobby,2026-08-27 13:51:45.102166388,visitor V01572 stayed over 10 hours
+47,2,tailgating,F2-E027,Main Lobby,2026-08-28 08:30:00.000000000,2 people entered on 1 swipe
+48,2,repeated_denied,F2-E011,ICU,2026-08-28 11:36:17.248316890,6 denied attempts at ICU
+49,2,loitering,,Parking,2026-09-01 02:54:17.740508973,person stayed 41 min at night
+50,2,door_forced,,ICU,2026-09-02 01:39:19.923191657,"door forced open, no badge swipe"
+51,2,door_forced,,Main Lobby,2026-09-03 00:06:32.494107369,"door forced open, no badge swipe"
+52,2,off_hours_restricted,F2-E007,ICU,2026-09-08 03:54:31.729777731,ICU opened between 00:00 and 04:00
+53,2,tailgating,F2-E119,Main Lobby,2026-09-09 17:30:00.000000000,2 people entered on 1 swipe
+54,2,door_forced,,ICU,2026-09-10 03:29:02.556916286,"door forced open, no badge swipe"
+55,2,door_forced,,Parking,2026-09-14 04:21:43.432288942,"door forced open, no badge swipe"
+56,2,loitering,,Parking,2026-09-17 02:56:27.032055861,person stayed 56 min at night
+57,2,tailgating,F2-E026,Main Lobby,2026-09-17 17:30:00.000000000,2 people entered on 1 swipe
+58,2,loitering,,Main Lobby,2026-09-21 00:02:22.394335940,person stayed 52 min at night
+59,2,off_hours_restricted,F2-E001,ICU,2026-09-23 03:38:08.644664329,ICU opened between 00:00 and 04:00
+60,2,tailgating,F2-E051,Main Lobby,2026-09-24 08:30:00.000000000,2 people entered on 1 swipe
+61,2,visitor_restricted_zone,,ICU,2026-09-25 11:51:23.126479565,visitor V01580 entered ICU
+62,2,loitering,,Parking,2026-09-28 01:54:39.464073306,person stayed 52 min at night
+63,2,visitor_no_checkout,,Main Lobby,2026-09-28 09:54:27.973214055,visitor V01576 never checked out
+64,2,repeated_denied,F2-E077,ICU,2026-10-02 08:11:16.864415577,7 denied attempts at ICU
+65,2,visitor_no_checkout,,Main Lobby,2026-10-02 13:11:01.759556217,visitor V01578 never checked out
+66,2,visitor_overstay,,Main Lobby,2026-10-05 13:24:27.972049153,visitor V01573 stayed over 10 hours
+67,2,visitor_no_checkout,,Main Lobby,2026-10-08 12:29:33.425507467,visitor V01577 never checked out
+68,2,off_hours_restricted,F2-E001,ICU,2026-10-13 01:31:25.643299929,ICU opened between 00:00 and 04:00
+69,2,visitor_overstay,,Main Lobby,2026-10-14 13:17:31.153193742,visitor V01575 stayed over 10 hours
+70,2,visitor_overstay,,Main Lobby,2026-10-15 11:37:46.498902807,visitor V01574 stayed over 10 hours
+71,2,visitor_restricted_zone,,ICU,2026-10-16 11:42:03.397480222,visitor V01579 entered ICU
+72,2,tailgating,F2-E019,Main Lobby,2026-10-19 09:00:00.000000000,2 people entered on 1 swipe
+73,2,loitering,,Parking,2026-10-20 00:34:20.345490410,person stayed 39 min at night
+74,2,repeated_denied,F2-E103,ICU,2026-10-26 18:18:05.275756926,8 denied attempts at ICU

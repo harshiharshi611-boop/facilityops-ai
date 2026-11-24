@@ -1,0 +1,17 @@
+facility_id,zone,zone_type,capacity,restricted,profile
+1,Main Lobby,lobby,80,False,lobby
+1,Open Office Floor 1,office,160,False,office
+1,Open Office Floor 2,office,160,False,office
+1,Meeting Rooms,meeting,60,False,meeting
+1,Cafeteria,cafeteria,120,False,cafe
+1,Training Hall,training,70,False,training
+1,Parking,parking,200,False,parking
+1,Server Room,restricted,10,True,server
+2,Main Lobby,lobby,100,False,hlobby
+2,OPD,clinic,150,False,opd
+2,Emergency,emergency,60,False,emergency
+2,Ward A,ward,50,False,ward
+2,Ward B,ward,50,False,ward
+2,ICU,restricted,20,True,icu
+2,Pharmacy,pharmacy,40,False,pharmacy
+2,Parking,parking,180,False,parking
