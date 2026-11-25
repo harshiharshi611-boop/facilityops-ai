@@ -15,12 +15,43 @@ const MAINTENANCE_TABS = [
   { to: "/maintenance/work-orders", label: "Work Orders & Alerts" },
 ];
 
+const OCCUPANCY_TABS = [
+  { to: "/occupancy", label: "Space Utilization", end: true },
+  { to: "/occupancy/forecast", label: "Forecast" },
+  { to: "/occupancy/alerts", label: "Incidents & Alerts" },
+];
+
+const SECURITY_TABS = [
+  { to: "/security", label: "Security Overview", end: true },
+  { to: "/security/alerts", label: "Alerts & Investigation" },
+  { to: "/security/visitors", label: "Visitors & Accuracy" },
+];
+
+// One entry per module (the pill at the top) with its three tabs.
+const SECTIONS = {
+  energy: { label: "Energy", to: "/", tabs: ENERGY_TABS,
+    title: "Energy Intelligence Dashboard", milestone: "Milestone 1" },
+  maintenance: { label: "Maintenance", to: "/maintenance", tabs: MAINTENANCE_TABS,
+    title: "Predictive Maintenance Dashboard", milestone: "Milestone 2" },
+  occupancy: { label: "Occupancy", to: "/occupancy", tabs: OCCUPANCY_TABS,
+    title: "Occupancy Intelligence Dashboard", milestone: "Milestone 3" },
+  security: { label: "Security", to: "/security", tabs: SECURITY_TABS,
+    title: "Security Intelligence Dashboard", milestone: "Milestone 3" },
+};
+
+function sectionFor(pathname) {
+  if (pathname.startsWith("/maintenance")) return "maintenance";
+  if (pathname.startsWith("/occupancy")) return "occupancy";
+  if (pathname.startsWith("/security")) return "security";
+  return "energy";
+}
+
 export default function App() {
   const [facilities, setFacilities] = useState([]);
   const [facilityId, setFacilityId] = useState(1);
   const { pathname } = useLocation();
-  const maintenance = pathname.startsWith("/maintenance");
-  const tabs = maintenance ? MAINTENANCE_TABS : ENERGY_TABS;
+  const current = sectionFor(pathname);
+  const section = SECTIONS[current];
 
   useEffect(() => {
     api.getFacilities().then(setFacilities).catch(() => {});
@@ -29,14 +60,17 @@ export default function App() {
   return (
     <div className="app">
       <div className="module">
-        <Link to="/" className={"pill" + (!maintenance ? " active" : "")}>Energy</Link>
-        <Link to="/maintenance" className={"pill" + (maintenance ? " active" : "")}>Maintenance</Link>
+        {Object.entries(SECTIONS).map(([key, s]) => (
+          <Link key={key} to={s.to} className={"pill" + (key === current ? " active" : "")}>
+            {s.label}
+          </Link>
+        ))}
       </div>
 
       <div className="header">
         <div>
-          <h1>{maintenance ? "Predictive Maintenance Dashboard" : "Energy Intelligence Dashboard"}</h1>
-          <p>Agentic FacilityOps AI Platform | {maintenance ? "Milestone 2" : "Milestone 1"}</p>
+          <h1>{section.title}</h1>
+          <p>Agentic FacilityOps AI Platform | {section.milestone}</p>
         </div>
         <select
           value={facilityId}
@@ -51,7 +85,7 @@ export default function App() {
       </div>
 
       <nav className="tabs">
-        {tabs.map((t) => (
+        {section.tabs.map((t) => (
           <NavLink key={t.to} to={t.to} end={t.end}>{t.label}</NavLink>
         ))}
       </nav>

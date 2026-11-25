@@ -12,6 +12,8 @@ import analytics
 import anomaly
 from agent import run_energy_agent
 from maintenance_api import router as maintenance_router
+from occupancy_api import router as occupancy_router
+from security_api import router as security_router
 
 app = FastAPI(title="FacilityOps AI API", version="2.0")
 
@@ -22,6 +24,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(maintenance_router)
+app.include_router(occupancy_router)
+app.include_router(security_router)
 
 def clean(obj):
     """Convert numpy, pandas and Decimal values into plain JSON types."""
